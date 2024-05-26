@@ -1,4 +1,10 @@
 # primesieve
+- forked from https://github.com/kimwalisch/primesieve for coophive
+
+## Run
+- with docker
+  - speicfy the path explicitly
+  - docker run -it ghcr.io/kimwalisch/primesieve/sage-docker-ubuntu-bionic-i386-minimal-configured:84f02afa5c-dirty-failed ./local/bin/primecount 1e10
 
 [![Build status](https://github.com/kimwalisch/primesieve/actions/workflows/ci.yml/badge.svg)](https://github.com/kimwalisch/primesieve/actions/workflows/ci.yml)
 [![Github Releases](https://img.shields.io/github/release/kimwalisch/primesieve.svg)](https://github.com/kimwalisch/primesieve/releases)
