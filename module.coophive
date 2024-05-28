@@ -13,10 +13,11 @@
       "Docker": {
         "Entrypoint": [
           "./local/bin/primesieve",
+          "-q",
           "1e10"
         ],
-        "Image": "ghcr.io/kimwalisch/primecount/sage-ubuntu-focal-minimal-configured:1cd49900cd-dirty"
-      },
+        "Image": "ghcr.io/kimwalisch/primesieve/sage-docker-ubuntu-focal-standard-with-targets:84f02afa5c-dirty"
+      },  
       "Engine": "Docker",
       "Network": {
         "Type": "None"
