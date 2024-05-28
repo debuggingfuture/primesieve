@@ -14,7 +14,7 @@
         "Entrypoint": [
           "./local/bin/primesieve",
           "-q",
-          "1e10"
+          {{if .Message}}{{.Message}}{{else}}"Pass me an input called Message, like hive run cowsay:v0.1.0 -i Message=moo"{{end}}
         ],
         "Image": "ghcr.io/kimwalisch/primesieve/sage-docker-ubuntu-focal-standard-with-targets:84f02afa5c-dirty"
       },  
