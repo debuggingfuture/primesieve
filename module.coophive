@@ -13,8 +13,9 @@
       "Docker": {
         "Entrypoint": [
           "./local/bin/primesieve",
-          "-q",
-          {{if .N}}{{.N}}{{else}}"Find the nth prime -i N=1e10"{{end}}
+          "--print=1",
+          "-q", 
+          {{if .n}}{{.n}}{{else}}"Find the first n primes -i n=1e10"{{end}}
         ],
         "Image": "ghcr.io/kimwalisch/primesieve/sage-docker-ubuntu-focal-standard-with-targets:84f02afa5c-dirty"
       },  
